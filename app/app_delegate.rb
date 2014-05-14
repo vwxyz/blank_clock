@@ -1,11 +1,14 @@
 class AppDelegate
   def application(application, didFinishLaunchingWithOptions:launchOptions)
-    # alert = UIAlertView.new
-    # alert.message = "hello world"
-    # alert.show()
+    p "hello"
+    # self.window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
+    # self.viewController = ViewController.alloc.initWithNibName("ClockController", bundle:nil)
+    # self.window.rootViewController = self.viewController
+    # self.window.makeKeyAndVisible
+
     @window = UIWindow.alloc.initWithFrame(UIScreen.mainScreen.bounds)
     @window.makeKeyAndVisible
-
+    p "world"
     # add new
     @window.rootViewController = ClockController.alloc.initWithNibName(nil, bundle: nil)
     true
